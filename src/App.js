@@ -1,16 +1,29 @@
 import './App.css';
-import Footer from './components/Footer';
-
-import Hero from './components/Hero';
-import NavBar from './components/NavBar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout"
+import Home from "./pages/Home"
+import Nosotros from "./pages/Nosotros"
+import Explora from "./pages/Explora"
+import Opina from "./pages/Opina"
+import Comunidad from "./pages/Comunidad"
+import Socios from "./pages/Socios"
+import NoPage from "./pages/NoPage"
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <Hero/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="nosotros" element={<Nosotros />} />
+          <Route path="explora" element={<Explora />} />
+          <Route path="opina" element={<Opina />} />
+          <Route path="comunidad" element={<Comunidad />} />
+          <Route path="socios" element={<Socios />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

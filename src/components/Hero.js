@@ -10,12 +10,12 @@ function Hero(){
                     <ReactPlayer 
                         className="absolute top-0 left-0" 
                         url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
-                        playing='true'
+                        playing='false'
                         width='100%'
                         height='100%'/>
                 </div>
                 
-                <div className="">
+                <div className="pt-4">
                     <h2 className="text-4xl font-bold mb-2 text-white">
                         Campus Virtual
                     </h2>
@@ -24,9 +24,9 @@ function Hero(){
                     </h3>
                 </div>
 
-                <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
+                <a href="https://hubs.mozilla.com/BTLkmZH/spiffy-orderly-meetup" className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
                     ¡Entrar!
-                </button>
+                </a>
             </div>
         </div>
     );

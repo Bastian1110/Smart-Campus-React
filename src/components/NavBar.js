@@ -1,11 +1,14 @@
 import React from "react";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import Logo from "../assets/Logo.jpg"
 
 function NavBar(){
     return(
         <nav>
-            <div className="container mx-auto px-6 py-2 flex justify-between items-center">
-                <a className="font-bold text-2xl lg:text-4xl" href="#">
-                    Smart Campus
+            <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+                <img src={Logo} className="img-responsive w-10 inline-block"/>
+                <a className="font-bold text-2xl lg:text-2xl float-left " href="#">
+                    CEM Inteligente
                 </a>
                 <div className="block lg:hidden">
                     <button className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
@@ -17,9 +20,12 @@ function NavBar(){
                 </div>
                 <div className="hidden lg:block">
                     <ul className="inline-flex">
-                        <li><a className="px-4 font-bold" href="/">Home</a></li>
-                        <li><a className="px-4 hover:text-gray-800" href="#">About</a></li>
-                        <li><a className="px-4 hover:text-gray-800" href="#">Contact</a></li>
+                        <li><Link to="/" className="px-4 hover:text-gray-800">Home</Link></li>
+                        <li><Link to="/nosotros" className="px-4 hover:text-gray-800">Nosotros</Link></li>
+                        <li><Link to="/explora" className="px-4 hover:text-gray-800">Explora</Link></li>
+                        <li><Link to="/opina" className="px-4 hover:text-gray-800">Opina</Link></li>
+                        <li><Link to="/comunidad" className="px-4 hover:text-gray-800">Comunidad</Link></li>
+                        <li><Link to="/socios" className="px-4 hover:text-gray-800">Socios</Link></li>
                     </ul>
                 </div>
             </div>
@@ -28,3 +34,6 @@ function NavBar(){
 
 }
 export default NavBar;
+
+
+//<img src={Logo} className="w-16 inline-block px-2" />

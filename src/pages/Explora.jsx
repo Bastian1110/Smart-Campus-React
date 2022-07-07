@@ -4,9 +4,8 @@ import Footer from '../components/Footer';
 function Explora() {
     return (
         <>
-        <h1>Titulo</h1>
-        <Footer/>
         
+        <Footer/>        
         
         </>
     );

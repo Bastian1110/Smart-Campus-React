@@ -1,8 +1,14 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 function Explora() {
     return (
-        <h1>this is the Explora</h1>
+        <>
+        <h1>Titulo</h1>
+        <Footer/>
+        
+        
+        </>
     );
 }
 

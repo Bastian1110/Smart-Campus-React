@@ -5,8 +5,8 @@ function Explora() {
     return (
         <>
         
-        <Footer/>        
         
+        <Footer/>        
         </>
     );
 }

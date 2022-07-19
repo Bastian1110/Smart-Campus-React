@@ -1,8 +1,13 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import Nuevo from '../components/Nuevo';
 
 function Opina() {
     return (
-        <h1>this is the Opina</h1>
+        <>
+        <Nuevo/>
+        <Footer/>        
+        </>
     );
 }
 

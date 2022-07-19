@@ -5,13 +5,14 @@ import Three from '../assets/images/Three.jpg';
 
 import SimpleImageSlider from "react-simple-image-slider";
 
+
 const images = [
     { url: One },
     { url: Two },
     { url: Three }
   ];
 
-function NHero(){
+  function NHero(){
     return(
         <div className="pt-10 pb-[18rem]">
             <div className="container mx-auto px-6 ">
